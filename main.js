@@ -18,7 +18,7 @@ class Block{
 
 class Blockchain{
     constructor(){
-        this.chain=[];
+        this.chain=[this.createGenesisBlock()];
     }
 
     createGenesisBlock(){
@@ -37,7 +37,8 @@ class Blockchain{
 }
 
 let mshCoin= new Blockchain();
-mshCoin.addBlock(new Block(1,'02/02/2012',{amount:2}));
-mshCoin.addBlock(new Block(1,'03/03/2013',{amount:3}));
+mshCoin.addBlock(new Block(0,'10/01/2011',{amount:0}));
+mshCoin.addBlock(new Block(1,'11/01/2011',{amount:1}));
+mshCoin.addBlock(new Block(2,'12/01/2011',{amount:2}));
 
 console.log(JSON.stringify(mshCoin,null,4));
