@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'crypto-jsnode',
+1 verbose cli   'main.js' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData crypto-jsnode
+8 silly fetchPackageMetaData main.js
+9 silly fetchNamedPackageData crypto-jsnode
+10 silly mapToRegistry name crypto-jsnode
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'crypto-jsnode',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'crypto-jsnode',
+13 silly mapToRegistry   name: 'crypto-jsnode',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/crypto-jsnode
+15 silly fetchOtherPackageData main.js
+16 silly cache add args [ 'main.js', null ]
+17 verbose cache add spec main.js
+18 verbose request uri https://registry.npmjs.org/crypto-jsnode
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 8:49:03 PM
+21 verbose request id 20988711f3f063e9
+22 http request GET https://registry.npmjs.org/crypto-jsnode
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'main.js',
+23 silly cache add   scope: null,
+23 silly cache add   escapedName: 'main.js',
+23 silly cache add   name: null,
+23 silly cache add   rawSpec: 'main.js',
+23 silly cache add   spec: '/Users/msharekh/Development/blockchain/blockchain-js/main.js',
+23 silly cache add   type: 'local' }
+24 silly addLocalTarball shasum (computed) 8925c8d82107f488384286d35d3e277d5b9e1d69
+25 verbose addTmpTarball /Users/msharekh/Development/blockchain/blockchain-js/main.js not in flight; adding
+26 verbose correctMkdir /Users/msharekh/.npm correctMkdir not in flight; initializing
+27 verbose addTmpTarball validating metadata from /Users/msharekh/Development/blockchain/blockchain-js/main.js
+28 verbose tar unpack /Users/msharekh/Development/blockchain/blockchain-js/main.js
+29 verbose tar unpacking to /tmp/npm-9192-c41a0377/unpack-d4f9b3fc
+30 silly gentlyRm /tmp/npm-9192-c41a0377/unpack-d4f9b3fc is being purged
+31 verbose gentlyRm don't care about contents; nuking /tmp/npm-9192-c41a0377/unpack-d4f9b3fc
+32 silly gunzTarPerm modes [ '755', '644' ]
+33 error not a package /Users/msharekh/Development/blockchain/blockchain-js/main.js
+34 error addLocal Could not install /Users/msharekh/Development/blockchain/blockchain-js/main.js
+35 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/tmp/npm-9192-c41a0377/unpack-d4f9b3fc/package.json'
+35 silly fetchPackageMetaData     at Error (native)
+35 silly fetchPackageMetaData  error for main.js { Error: ENOENT: no such file or directory, open '/tmp/npm-9192-c41a0377/unpack-d4f9b3fc/package.json'
+35 silly fetchPackageMetaData     at Error (native)
+35 silly fetchPackageMetaData   errno: -2,
+35 silly fetchPackageMetaData   code: 'ENOENT',
+35 silly fetchPackageMetaData   syscall: 'open',
+35 silly fetchPackageMetaData   path: '/tmp/npm-9192-c41a0377/unpack-d4f9b3fc/package.json' }
+36 http 404 https://registry.npmjs.org/crypto-jsnode
+37 verbose headers { date: 'Fri, 10 Aug 2018 17:49:04 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'content-length': '21',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'set-cookie': [ '__cfduid=d124ae154d23e5d8818a8238cdfdae8dc1533923344; expires=Sat, 10-Aug-19 17:49:04 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'cf-cache-status': 'MISS',
+37 verbose headers   'cf-ray': '44844c056fbc603b-MRS',
+37 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 verbose headers   vary: 'accept-encoding, accept',
+37 verbose headers   server: 'cloudflare' }
+38 silly get cb [ 404,
+38 silly get   { date: 'Fri, 10 Aug 2018 17:49:04 GMT',
+38 silly get     'content-type': 'application/json',
+38 silly get     'content-length': '21',
+38 silly get     connection: 'keep-alive',
+38 silly get     'set-cookie': [ '__cfduid=d124ae154d23e5d8818a8238cdfdae8dc1533923344; expires=Sat, 10-Aug-19 17:49:04 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+38 silly get     'cache-control': 'max-age=300',
+38 silly get     'cf-cache-status': 'MISS',
+38 silly get     'cf-ray': '44844c056fbc603b-MRS',
+38 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+38 silly get     vary: 'accept-encoding, accept',
+38 silly get     server: 'cloudflare' } ]
+39 silly fetchPackageMetaData Error: Not found : crypto-jsnode
+39 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+39 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+39 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+39 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+39 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+39 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+39 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+39 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+39 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+39 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+39 silly fetchPackageMetaData  error for crypto-jsnode { Error: Not found : crypto-jsnode
+39 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+39 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+39 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+39 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+39 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+39 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+39 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+39 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+39 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+39 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12) pkgid: 'crypto-jsnode', statusCode: 404, code: 'E404' }
+40 silly rollbackFailedOptional Starting
+41 silly rollbackFailedOptional Finishing
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 verbose stack Error: ENOENT: no such file or directory, open '/tmp/npm-9192-c41a0377/unpack-d4f9b3fc/package.json'
+44 verbose stack     at Error (native)
+45 verbose cwd /Users/msharekh/Development/blockchain/blockchain-js
+46 error Darwin 17.5.0
+47 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "crypto-jsnode" "main.js"
+48 error node v6.9.1
+49 error npm  v3.10.8
+50 error path /tmp/npm-9192-c41a0377/unpack-d4f9b3fc/package.json
+51 error code ENOENT
+52 error errno -2
+53 error syscall open
+54 error enoent ENOENT: no such file or directory, open '/tmp/npm-9192-c41a0377/unpack-d4f9b3fc/package.json'
+55 error enoent ENOENT: no such file or directory, open '/tmp/npm-9192-c41a0377/unpack-d4f9b3fc/package.json'
+55 error enoent This is most likely not a problem with npm itself
+55 error enoent and is related to npm not being able to find a file.
+56 verbose exit [ -2, true ]
